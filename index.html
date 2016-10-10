@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Genera : Documentation for Museum Victoria&#39;s Genera Project ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Genera</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/museumvictoria/genera">View on GitHub</a>
+
+          <h1 id="project_title">Genera</h1>
+          <h2 id="project_tagline">Documentation for Museum Victoria&#39;s Genera Project </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/museumvictoria/genera/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/museumvictoria/genera/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="introduciton" class="anchor" href="#introduciton" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduciton</h3>
+
+<p>When a bird-watcher, or “twitcher”, is out in the forest and spots a bird that they can’t identify, they’ll generally reach for their favourite field guide book.  Within the pages of that field guide, they’ll find images of individual birds along with detailed descriptions of their distinguishing features, and the areas in which they are found.</p>
+
+<p>For over a century, organisations and individuals have been publishing paper based field guides on a range of topics, including birds, wildflowers, and minerals. The majority of the pages of these books are devoted to the entries on each distinguishable object in the topic area. However, often a serious naturalist would need to carry more than one guide, books go out of date and they also get heavier the more content is added to them. The advent of mobile devices and associated app stores into the marketplace was a gamechanger. For something like a field guide, publishing to mobile has many advantages – including the opportunity to add many more images, plus sound files, as well as the traditional descriptive text.</p>
+
+<p>In 2011, Museum Victoria (MV) released the “Field Guide to Victorian Fauna” for iOS devices. The source code for that project was released under an MIT style licence so that other organisations and individuals could produce field guides of their own. </p>
+
+<p>The original code was structured so that a field guide could be produced without needing to modify the Objective C code. This was achieved by having a defined data file format, text layout controlled by HTML templates and a standardised set of requirements. By simply adding data, images and audio to the project a “standard” field guide could be produced. </p>
+
+<p>By modifying the HTML templates, users of the source code could produce a customised version. However, the structure of the data file meant that without modification to the code, the system was only suitable for field guides to animals including birds and invertebrates (together known as fauna).</p>
+
+<h3>
+<a id="the-genera-project" class="anchor" href="#the-genera-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Genera Project</h3>
+
+<p>In 2012, MV built on the concept to produce a code base that could be used for field guides on any topic or even multiple topics - the Genera System.</p>
+
+<p>The Genera system was built to allow organisations or individuals to produce “field guide” style apps for any subject, and to deploy them across multiple platforms – e.g. iOS, Android – without needing to modify application code.</p>
+
+<p>To achieve this, Genera modifies the previous standard data format by separating the data into the fixed properties required to control aspects of front end presentation in the app, and a section of user defined properties. HTML and CSS templates are used for the detailed presentation of information.</p>
+
+<p>The ideal implementation of the Genera system allows the user to produce an app by running a compile script after putting a data file, HTML/CSS templates, and associated media assets into specific directories.</p>
+
+<h3>
+<a id="implementations" class="anchor" href="#implementations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementations</h3>
+
+<p>This repository is for documentation and example files. Implementations for specific platforms are in separate repositories. </p>
+
+<h4>
+<a id="genera-for-ios---swift" class="anchor" href="#genera-for-ios---swift" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Genera for iOS - Swift</h4>
+
+<p>This is the most current version of the Genera Platform for iOS -<a href="https://github.com/museumvictoria/mv-genera-ios-swift">Swift Repository</a> </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Genera maintained by <a href="https://github.com/museumvictoria">museumvictoria</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
